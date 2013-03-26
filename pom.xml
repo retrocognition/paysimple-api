@@ -22,12 +22,6 @@
 </repositories> 
   <dependencies>
     <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-web-api</artifactId>
-      <version>6.0</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.6.1</version>
@@ -39,48 +33,13 @@
       <classifier>all</classifier>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-oxm</artifactId>
-      <version>${SPRING_VERSION}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.thoughtworks.xstream</groupId>
-      <artifactId>xstream</artifactId>
-      <version>1.4.1</version>
-    </dependency>
-    <dependency>
-      <groupId>xpp3</groupId>
-      <artifactId>xpp3</artifactId>
-      <version>1.1.4c</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.ws</groupId>
-      <artifactId>spring-oxm-tiger</artifactId>
-      <version>1.5.10</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.xml</groupId>
-      <artifactId>jaxp-api</artifactId>
-      <version>1.4.2</version>
-    </dependency>
-    <dependency>
       <groupId>commons-lang</groupId>
       <artifactId>commons-lang</artifactId>
       <version>2.6</version>
     </dependency>
     <dependency>
     	<groupId>org.springframework</groupId>
-    	<artifactId>spring-dao</artifactId>
-    	<version>2.0.8</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
     	<artifactId>spring-web</artifactId>
-    	<version>${SPRING_VERSION}</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-webmvc</artifactId>
     	<version>${SPRING_VERSION}</version>
     </dependency>
     <dependency>
@@ -114,11 +73,6 @@
     	<version>1.0.0.GA</version>
     </dependency>
     <dependency>
-    	<groupId>commons-collections</groupId>
-    	<artifactId>commons-collections</artifactId>
-    	<version>3.2.1</version>
-    </dependency>
-    <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
       <version>2.1.3</version>
@@ -138,16 +92,6 @@
       <artifactId>jackson-datatype-joda</artifactId>
       <version>2.1.2</version>
     </dependency> 
-    <dependency>
-    	<groupId>org.springframework.security</groupId>
-    	<artifactId>spring-security-core</artifactId>
-    	<version>3.1.3.RELEASE</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework.security</groupId>
-    	<artifactId>spring-security-config</artifactId>
-    	<version>3.1.3.RELEASE</version>
-    </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
@@ -176,7 +120,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>13.0.1</version>
+      <version>14.0.1</version>
     </dependency>
   </dependencies>
   <build>

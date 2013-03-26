@@ -2,17 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
   xmlns:context="http://www.springframework.org/schema/context"
-  xmlns:mvc="http://www.springframework.org/schema/mvc"
   xsi:schemaLocation="
-    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
   <!-- the first two entries are for local tomcat, unit tests, and then production -->
   <context:property-placeholder location="default.properties" ignore-resource-not-found="false" />
-  <!--  this is a workaround for some configuration difficulties -->
-  <!-- enable validation, etc... -->
-  <!-- <mvc:annotation-driven conversion-service="conversionService"/> -->
   
   <!-- jackson object mapper -->
   <bean id="objectMapper" class="com.retro.paysimple.mapper.ObjectMapperImpl">
@@ -20,7 +15,7 @@
       <bean class="com.fasterxml.jackson.databind.PropertyNamingStrategy.PascalCaseStrategy" />
     </property>
   </bean>
-  
+  <!-- spring rest template -->
   <bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
     <property name="messageConverters">
         <list>
@@ -39,21 +34,8 @@
     </property>
   </bean>
   
-  
- <!--  <mvc:annotation-driven conversion-service="applicationConversionService">
-    <mvc:message-converters register-defaults="true">
-      <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
-          <property name="objectMapper" ref="objectMapper" />
-      </bean>
-    </mvc:message-converters>
-  </mvc:annotation-driven> -->
-  
   <!-- connectors -->
   <bean id="customerConnector" class="com.retro.paysimple.connector.CustomerConnector">
     <property name="restTemplate" ref="restTemplate" />
   </bean>
-  
-  
-  
-  
 </beans>

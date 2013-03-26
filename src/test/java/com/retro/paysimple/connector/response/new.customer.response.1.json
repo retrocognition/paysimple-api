@@ -1,0 +1,42 @@
+{
+    "Meta": {
+        "Errors": null,
+        "HttpStatus": "Created",
+        "HttpStatusCode": 201,
+        "PagingDetails": null
+    },
+    "Response": {
+        "MiddleName": null,
+        "AltEmail": null,
+        "AltPhone": null,
+        "MobilePhone": null,
+        "Fax": null,
+        "Website": null,
+        "BillingAddress": {
+            "StreetAddress1": "123 Simple Street",
+            "StreetAddress2": null,
+            "City": "Denver",
+            "StateCode": "CO",
+            "ZipCode": "80202",
+            "Country": "US"
+        },
+        "ShippingSameAsBilling": true,
+        "ShippingAddress": {
+            "StreetAddress1": "123 Simple Street",
+            "StreetAddress2": null,
+            "City": "Denver",
+            "StateCode": "CO",
+            "ZipCode": "80202",
+            "Country": "US"
+        },
+        "Company": null,
+        "Notes": null,
+        "FirstName": "Tom",
+        "LastName": "Simple",
+        "Email": "tsimple@paysimple.com",
+        "Phone": "3216549870",
+        "Id": 2087241,
+        "LastModified": "2012-06-28T15:42:41.5152506Z",
+        "CreatedOn": "2012-06-28T15:42:41.5152506Z"
+    }
+}
